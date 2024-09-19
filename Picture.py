@@ -1,6 +1,6 @@
 from PIL import Image
 image=Image.open("image.jpg")
-red, blue, green = image.split()
+red, green, blue = image.split()
 width_diff=100
 height_diff=50
 red_crop=red.crop((width_diff, height_diff, red.width, red.height))
